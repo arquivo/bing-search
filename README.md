@@ -34,6 +34,7 @@ python bing_search.py
 -n or --results_number    --> Number of results returned.
 -o or --offset            --> Indicates the number of search results to skip before returning results.
 -f or --sortBy            --> Date or Relevance. Only used on news and can not be used. Since is already set by default using both.
+-t or --type_search       --> Webpage, Image, News, or Video.
 </pre>
 
 ### Explication of the parameters and relations between them
@@ -93,10 +94,17 @@ Relevance — Returns news topics sorted by relevance, which considers topic fre
 
 Thus, for the news the script will do 3 searchs. 1) Without the sortBy parameter, 2) with sortBy = "Relevance" and 3) sortBy = "Date" by default.
 
+#### "type_search"
+
+Webpage - Does not perform web search.<br>
+Image - Does not perform image search.<br>
+News - Does not perform news search.<br>
+Video - Does not perform video search.<br>
+
 #### NOTES
 
 1. Other additional parameters in the Bing API that were not used in this repository either did not work for Portugal or returned poor results. (At the time of writing the readme).<br>
-2. The Trending News API was not collecting as expected for queries from Portugal. Thus, it was not considered.
+2. The Trending News API and Entity search was not collecting results as expected for queries from Portugal. Thus, it was not considered.
 
 ### Example
 
