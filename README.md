@@ -34,7 +34,7 @@ python bing_search.py
 -n or --results_number    --> Number of results returned.
 -o or --offset            --> Indicates the number of search results to skip before returning results.
 -f or --sortBy            --> Date or Relevance. Only used on news and can not be used. Since is already set by default using both.
--t or --type_search       --> Webpage, Image, News, or Video.
+-h or --type_search       --> Webpage, Image, News, or Video.
 </pre>
 
 ### Explication of the parameters and relations between them
