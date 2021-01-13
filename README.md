@@ -33,6 +33,7 @@ python bing_search.py
 -t or --freshness         --> Day, Week, or Month.
 -n or --results_number    --> Number of results returned.
 -o or --offset            --> Indicates the number of search results to skip before returning results.
+-f or --sortBy            --> Date or Relevance. Only used on news and can not be used. Since is already set by default using both.
 </pre>
 
 ### Explication of the parameters and relations between them
@@ -89,6 +90,8 @@ The order to return news topics in. The following are the possible case-insensit
 
 Date — Returns news topics sorted by date from the most recent to the oldest.<br>
 Relevance — Returns news topics sorted by relevance, which considers topic freshness, category, global user engagement, and personalized features.<br>
+
+Thus, for the news the script will do 3 searchs. 1) Without the sortBy parameter, 2) with sortBy = "Relevance" and 3) sortBy = "Date" by default.
 
 #### NOTES
 
