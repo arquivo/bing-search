@@ -29,10 +29,10 @@ python bing_search.py
 
 <pre>
 -s or --safeSearch        --> Off, Moderate, or Strict.
--l or --setLanguage       --> Boolean to force language. True (PT-PT), False (All languages)
+-l or --setLanguage       --> Boolean to force language. True (PT-PT), False (All languages).
 -t or --freshness         --> Day, Week, or Month.
--n or --results_number    --> Number of results returned. The default is 20 and the maximum is 50. If you want more than 50 results use multiples of 20.
--o or --offset            --> Indicates the number of search results to skip before returning results. Only use if results_number is less than 50.
+-n or --results_number    --> Number of results returned.
+-o or --offset            --> Indicates the number of search results to skip before returning results.
 </pre>
 
 ### Explication of the parameters and relations between them
