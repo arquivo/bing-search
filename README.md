@@ -81,6 +81,20 @@ We set a maximum of 50, but if you want more than 50 it is possible, it just has
 #### "offset"
 The offset indicates the number of search results to skip before returning results. The default is 0. Use this parameter along with the results_number parameter jump between page results. However, do not use the parameter offset if results_number is greater than 50.
 
+#### "sortBy"
+
+This parameter cannot be set, since, it returns interesting results for each case and only can be used for news.
+
+The order to return news topics in. The following are the possible case-insensitive values:
+
+Date — Returns news topics sorted by date from the most recent to the oldest.<br>
+Relevance — Returns news topics sorted by relevance, which considers topic freshness, category, global user engagement, and personalized features.<br>
+
+#### NOTES
+
+1. Other additional parameters in the Bing API that were not used in this repository either did not work for Portugal or returned poor results. (At the time of writing the readme).<br>
+2. The Trending News API was not collecting as expected for queries from Portugal. Thus, it was not considered.
+
 ### Example
 
 Example and default parameters:
