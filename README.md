@@ -11,11 +11,6 @@ pip install --upgrade virtualenv
 virtualenv -p python3 venv
 source venv/bin/activate
 ```
-### Run
-
-```
-python bing_search.py
-```
 
 ### Parameters script
 
@@ -106,12 +101,10 @@ Video - Does not perform video search.<br>
 1. Other additional parameters in the Bing API that were not used in this repository either did not work for Portugal or returned poor results. (At the time of writing the readme).<br>
 2. The Trending News API and Entity search was not collecting results as expected for queries from Portugal. Thus, it was not considered.
 
-### Example
-
-Example and default parameters:
+### Run
 
 ```
-python bing_search.py
+python bing_search.py -k <azure_key>
 ```
 
 ### Authors
